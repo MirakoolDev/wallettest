@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/mint build.loader.js";
+      var loaderUrl = buildUrl + "/build no sign.loader.js";
       var config = {
-        dataUrl: buildUrl + "/mint build.data",
-        frameworkUrl: buildUrl + "/mint build.framework.js",
-        codeUrl: buildUrl + "/mint build.wasm",
+        dataUrl: buildUrl + "/build no sign.data",
+        frameworkUrl: buildUrl + "/build no sign.framework.js",
+        codeUrl: buildUrl + "/build no sign.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Floats",
         productName: "PlayHAM",
-        productVersion: "0.1.0",
+        productVersion: "0.1.1",
         showBanner: unityShowBanner,
       };
 
@@ -97,6 +97,7 @@
         canvas.style.height = "600px";
       }
 
+      canvas.style.background = "url('" + buildUrl + "/build no sign.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
